@@ -12,7 +12,7 @@
 /*
  * Struct to represent 3-dimensional vectors. 
  */
-typedef struct 
+typedef struct
 {
   int x;
   int y;
@@ -24,21 +24,18 @@ typedef struct
 /**************************************************************/
 
 Vector3 friends_locations[5] = {
-  {.x = 715, .y = 105, .z = -40},
-  {.x = 613, .y = 105, .z = -24},
-  {.x = 447, .y = 106, .z = 158},
-  {.x = 507, .y = 105, .z = 264},
-  {.x = 596, .y = 105, .z = 402}
-};
+    {.x = 715, .y = 105, .z = -40},
+    {.x = 613, .y = 105, .z = -24},
+    {.x = 447, .y = 106, .z = 158},
+    {.x = 507, .y = 105, .z = 264},
+    {.x = 596, .y = 105, .z = 402}};
 
 Vector3 dangerous_locations[5] = {
-  {.x = 475, .y = 104, .z = 193},
-  {.x = 526, .y = 105, .z = 225},
-  {.x = 487, .y = 105, .z = -10},
-  {.x = 685, .y = 105, .z = -21},
-  {.x = 421, .y = 105, .z = 116}
-};
-
+    {.x = 475, .y = 104, .z = 193},
+    {.x = 526, .y = 105, .z = 225},
+    {.x = 487, .y = 105, .z = -10},
+    {.x = 685, .y = 105, .z = -21},
+    {.x = 421, .y = 105, .z = 116}};
 
 /**************************************************************/
 /* Engines                                                    */
@@ -101,7 +98,7 @@ unsigned short get_us_distance();
  * Returns:
  *   void
  */
-void get_current_GPS_position(Vector3* pos);
+void get_current_GPS_position(Vector3 *pos);
 
 /* 
  * Reads global rotation from the gyroscope device .
@@ -110,7 +107,7 @@ void get_current_GPS_position(Vector3* pos);
  * Returns:
  *   void
  */
-void get_gyro_angles(Vector3* angles);
+void get_gyro_angles(Vector3 *angles);
 
 /**************************************************************/
 /* Timer                                                      */
@@ -146,10 +143,6 @@ void set_time(unsigned int t);
  * Returns:
  *   void
  */
-void puts(const char*);
+void puts_1(const char *);
 
 #endif // API_ROBOT_H
-
-
-
-
